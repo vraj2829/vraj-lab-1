@@ -5,15 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Experience — University of Suffolk</title>
   <style>
-    body {font-family: Arial, sans-serif; background-color: #f9fafb; color: #111827; margin: 40px;}
-    .container {max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+    body {font-family: Arial, sans-serif; background: #f9fafb; margin: 0;}
+    .container {max-width: 800px; margin: 50px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
     h1 {color: #0b5fff;}
+    .btn {display: inline-block; padding: 10px 18px; background: #0b5fff; color: white; text-decoration: none; border-radius: 8px; margin-top: 20px;}
+    .btn:hover {background: #094ed8;}
   </style>
 </head>
 <body>
   <div class="container">
     <h1>My Experience at the University of Suffolk</h1>
-    <p>My experience at the University of Suffolk has been really positive and full of learning. The teachers are supportive, and the modules are very practical, especially in computing. I learned about DevOps, web development, and distributed operating systems, which helped me build real projects and improve my problem-solving skills. The campus is friendly, and studying here helped me gain both confidence and technical knowledge for my future career.</p>
+    <p>My experience at the University of Suffolk has been very positive and full of learning. The teachers are supportive and always willing to help. Through modules like DevOps and Web Development, I learned practical skills such as Docker, CI/CD, and Django development. These experiences helped me become more confident and prepared for my future career in computing.</p>
+
+    <!-- Button linking to About Myself page -->
+    <a href="{% url 'about' %}" class="btn">About Myself</a>
   </div>
 </body>
 </html>

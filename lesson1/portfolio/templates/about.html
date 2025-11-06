@@ -1,10 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Myself</title>
+  <style>
+    body {font-family: Arial, sans-serif; background: #f9fafb; margin: 0;}
+    .container {max-width: 800px; margin: 50px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
+    h1 {color: #0b5fff;}
+    .btn {display: inline-block; padding: 10px 18px; background: #0b5fff; color: white; text-decoration: none; border-radius: 8px; margin-top: 20px;}
+    .btn:hover {background: #094ed8;}
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>About Myself</h1>
+    <p>Hello! My name is Goresh Rohilla, and I am a student at the University of Suffolk. I enjoy learning about technology and building real-world projects using Python, Django, and Docker. I am passionate about solving problems and continuously improving my technical and teamwork skills. In my free time, I like exploring new tools, learning cloud computing, and working on personal projects.</p>
 
+    <!-- Button linking back to Experience page -->
+    <a href="{% url 'home' %}" class="btn">My Experience</a>
+  </div>
 </body>
 </html>
